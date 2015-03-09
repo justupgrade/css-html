@@ -1,0 +1,70 @@
+.centred_text {
+	text-align: center;
+}
+
+.container {
+	overflow: hidden;
+	border: 1px dashed gray;
+	border-radius: 5px;
+	width: 60%;
+	margin-bottom: 10px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.container div {
+	float: left;
+}
+
+.title {
+	text-transform: uppercase;
+	border-bottom: 2px solid gray;
+	font-size: 1.2em;
+	font-weight: bold;
+}
+
+.categories {
+	margin-top: 10px;
+}
+
+.right {
+	float: right;
+	width: 200px;
+	margin-right: 0;
+}
+
+ul {
+	padding-left: 5px;
+}
+
+.bold_ul li {
+	font-weight: bold;
+}
+
+.no_style li {
+	list-style-type: none;
+}
+
+img {
+
+}
+
+.first_cat {
+	width: 200px;
+	font-weight: bold;
+}
+
+
+.back {
+	background: yellow;
+}
+
+section {
+	overflow: hidden;
+	margin-bottom: 10px;
+}
+
+.tasks li {
+	margin-left: 50px;
+}
+
