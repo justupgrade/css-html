@@ -1,1 +1,11 @@
 *~
+composer.phar
+www/.editorconfig
+www/.gitattributes
+www/.travis.yml
+www/composer.json
+www/composer.lock
+www/vendor/*
+www/config/app.php
+www/tmp/*
+www/logs/*
