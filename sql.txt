@@ -1,0 +1,31 @@
+CREATE DATABASE cake_cv;
+CREATE DATABASE cake_cv_test;
+
+CREATE TABLE users (
+  id INT UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  email VARCHAR(128) NOT NULL UNIQUE,
+  password VARCHAR(128) NOT NULL,
+  created DATETIME,
+  modified DATETIME
+);
+
+CREATE TABLE personals (
+  id INT UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  user_id INT UNSIGNED NOT NULL,
+  first_name VARCHAR(128),
+  last_name VARCHAR(128),
+  born_date DATETIME,
+  born_place VARCHAR(128),
+  address VARCHAR(128),
+  phone VARCHAR(32),
+  FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE
+);
+
+CREATE TABLE educations (
+    id INT UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    user_id INT UNSIGNED NOT NULL,
+    name VARCHAR(255) NOT NULL,
+    start DATETIME,
+    finish DATETIME,
+    FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE
+);

@@ -9,3 +9,4 @@ www/vendor/*
 www/config/app.php
 www/tmp/*
 www/logs/*
+.idea/
